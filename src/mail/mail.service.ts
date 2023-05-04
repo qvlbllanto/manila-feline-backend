@@ -61,7 +61,7 @@ export class MailService {
 
     const smtpTransport = nodemailer.createTransport(authObject as any);
 
-    const templatePath = './dist/templates/';
+    const templatePath = './src/templates/';
 
     try {
       const htmlfile = path.resolve(templatePath, `${template}.hbs`);
